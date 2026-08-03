@@ -283,7 +283,14 @@ def sitemap():
     </url>
 </urlset>"""
     return sitemap_xml, 200, {"Content-Type": "application/xml"}
+@app.route("/robots.txt")
+def robots():
+    robots_txt = """User-agent: *
+Allow: /
 
+Sitemap: https://ai-tts-website-online.onrender.com/sitemap.xml
+"""
+    return robots_txt, 200, {"Content-Type": "text/plain"}
 @app.route("/")
 def home():
 
