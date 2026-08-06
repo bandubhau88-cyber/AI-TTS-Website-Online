@@ -1,2484 +1,407 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
 <meta name="google-site-verification" content="TZgyyLfEUNaXgFRSR4qTrlwSjnb-XR-a4672Z-rQg9c" />
 <meta charset="UTF-8">
-
-<meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
->
-
-<title>Free AI Text to Speech Online | AI Voice Generator - AI Voice Studio Pro</title>
-<meta name="description" content="Free AI Text to Speech online tool. Convert text into natural AI voices and download high-quality audio. AI Voice Studio Pro supports multiple voices and languages.">
-<meta name="keywords" content="AI text to speech, free text to speech, text to speech online, AI voice generator, free AI voice generator, TTS online, text to voice, AI voice online, natural AI voice, convert text to speech">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Voice Studio Pro | AI Text to Speech Online</title>
+<meta name="description" content="Convert text into natural AI voices. Get 1,000 free characters, preview voices, download MP3 audio and choose flexible plans.">
+<meta name="keywords" content="AI text to speech, text to speech online, AI voice generator, TTS online, text to voice">
 <meta name="author" content="AI Voice Studio Pro">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://ai-tts-website-online.onrender.com/">
-<meta property="og:title" content="Free AI Text to Speech Online | AI Voice Studio Pro">
-<meta property="og:description" content="Convert text into natural AI speech online for free with AI Voice Studio Pro.">
+<meta property="og:title" content="AI Voice Studio Pro | AI Text to Speech">
+<meta property="og:description" content="Natural AI voice generation for stories, videos and creative projects.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://ai-tts-website-online.onrender.com/">
-<meta property="og:site_name" content="AI Voice Studio Pro">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Free AI Text to Speech Online | AI Voice Studio Pro">
-<meta name="twitter:description" content="Convert text into natural AI speech online for free.">
 <meta name="theme-color" content="#111827">
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebApplication","name":"AI Voice Studio Pro","url":"https://ai-tts-website-online.onrender.com/","description":"Free online AI text to speech tool for converting text into natural sounding AI voices.","applicationCategory":"MultimediaApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {"@type":"Question","name":"Is AI Voice Studio Pro free?","acceptedAnswer":{"@type":"Answer","text":"Yes. The website currently offers its text-to-speech interface as a free online tool."}},
-    {"@type":"Question","name":"Can I download the generated voice?","acceptedAnswer":{"@type":"Answer","text":"Yes. After successful generation, the audio can be previewed and downloaded as an MP3."}},
-    {"@type":"Question","name":"Can I use long scripts?","acceptedAnswer":{"@type":"Answer","text":"The current interface supports scripts up to 50,000 characters."}}
-  ]
-}
-</script>
-
-
 
 <style>
-
-*{
-    box-sizing:border-box;
-    margin:0;
-    padding:0;
-}
-
-
-body{
-
-    min-height:100vh;
-
-    font-family:
-    Arial,
-    Helvetica,
-    sans-serif;
-
-    color:#fff;
-
-    background:
-    radial-gradient(
-        circle at top,
-        #21183b 0%,
-        #0d0d13 35%,
-        #070709 100%
-    );
-
-}
-
-
-.page{
-
-    width:94%;
-    max-width:1150px;
-
-    margin:auto;
-
-    padding:
-    45px 0 80px;
-
-}
-
-
-/* HERO */
-
-.hero{
-
-    text-align:center;
-
-    margin-bottom:35px;
-
-}
-
-
-.hero h1{
-
-    font-size:
-    clamp(
-        36px,
-        5vw,
-        58px
-    );
-
-    margin-bottom:12px;
-
-}
-
-
-.gradient{
-
-    background:
-    linear-gradient(
-        90deg,
-        #8d66ff,
-        #d76cff
-    );
-
-    background-clip:text;
-
-    -webkit-background-clip:text;
-
-    -webkit-text-fill-color:
-    transparent;
-
-}
-
-
-.hero p{
-
-    color:#aaa7b6;
-
-    font-size:17px;
-
-}
-
-
-/* MAIN CARD */
-
-.studio{
-
-    background:#111116;
-
-    border:
-    1px solid #2d2a35;
-
-    border-radius:24px;
-
-    overflow:hidden;
-
-    box-shadow:
-    0 30px 90px
-    rgba(0,0,0,.45);
-
-}
-
-
-.header{
-
-    padding:
-    23px 28px;
-
-    display:flex;
-
-    justify-content:
-    space-between;
-
-    align-items:center;
-
-    border-bottom:
-    1px solid #2b2932;
-
-}
-
-
-.header h2{
-
-    font-size:20px;
-
-}
-
-
-.status{
-
-    color:#75ff9e;
-
-    font-size:13px;
-
-}
-
-
-.content{
-
-    padding:28px;
-
-}
-
-
-/* TEXT */
-
-textarea{
-
-    width:100%;
-
-    min-height:250px;
-
-    resize:vertical;
-
-    background:#0b0b10;
-
-    border:
-    1px solid #35323d;
-
-    border-radius:16px;
-
-    color:white;
-
-    padding:21px;
-
-    font-size:17px;
-
-    line-height:1.65;
-
-    outline:none;
-
-}
-
-
-textarea:focus{
-
-    border-color:#8b5cff;
-
-    box-shadow:
-    0 0 0 3px
-    rgba(139,92,255,.1);
-
-}
-
-
-textarea::placeholder{
-
-    color:#706d7b;
-
-}
-
-
-.text-info{
-
-    display:flex;
-
-    justify-content:
-    space-between;
-
-    gap:15px;
-
-    margin-top:9px;
-
-    color:#777480;
-
-    font-size:12px;
-
-}
-
-
-/* GRID */
-
-.grid{
-
-    display:grid;
-
-    grid-template-columns:
-    1fr 1fr;
-
-    gap:18px;
-
-    margin-top:20px;
-
-}
-
-
-.control{
-
-    background:#0c0c11;
-
-    border:
-    1px solid #2d2b34;
-
-    border-radius:14px;
-
-    padding:17px;
-
-}
-
-
-.control label{
-
-    display:block;
-
-    color:#bdbac7;
-
-    font-size:13px;
-
-    margin-bottom:10px;
-
-}
-
-
-select,
-input[type="text"]{
-
-    width:100%;
-
-    height:48px;
-
-    border-radius:10px;
-
-    border:
-    1px solid #393641;
-
-    background:#17171d;
-
-    color:#fff;
-
-    padding:
-    0 13px;
-
-    font-size:14px;
-
-    outline:none;
-
-}
-
-
-select:focus,
-input[type="text"]:focus{
-
-    border-color:#8b5cff;
-
-}
-
-
-/* SLIDERS */
-
-.slider-top{
-
-    display:flex;
-
-    justify-content:
-    space-between;
-
-    margin-bottom:14px;
-
-}
-
-
-.slider-top span{
-
-    font-size:13px;
-
-}
-
-
-.value{
-
-    color:#ad82ff;
-
-}
-
-
-input[type="range"]{
-
-    width:100%;
-
-    accent-color:#935eff;
-
-}
-
-
-/* STYLE DESCRIPTION */
-
-.style-description{
-
-    margin-top:9px;
-
-    color:#777480;
-
-    font-size:12px;
-
-    line-height:1.5;
-
-}
-
-
-/* BUTTON */
-
-.generate{
-
-    width:100%;
-
-    margin-top:24px;
-
-    min-height:60px;
-
-    border:0;
-
-    border-radius:14px;
-
-    color:#fff;
-
-    font-size:17px;
-
-    font-weight:bold;
-
-    cursor:pointer;
-
-    background:
-    linear-gradient(
-        90deg,
-        #7050ff,
-        #aa50ff
-    );
-
-}
-
-
-.generate:hover{
-
-    transform:
-    translateY(-1px);
-
-}
-
-
-.generate:disabled{
-
-    opacity:.55;
-
-    cursor:not-allowed;
-
-    transform:none;
-
-}
-
-
-/* MESSAGE */
-
-.message{
-
-    display:none;
-
-    margin-top:18px;
-
-    padding:14px;
-
-    border-radius:11px;
-
-    font-size:14px;
-
-}
-
-
-.message.success{
-
-    display:block;
-
-    color:#91ffaf;
-
-    background:#13321d;
-
-    border:
-    1px solid #28643c;
-
-}
-
-
-.message.error{
-
-    display:block;
-
-    color:#ff9ca7;
-
-    background:#35171c;
-
-    border:
-    1px solid #6a3038;
-
-}
-
-
-/* RESULT */
-
-.result{
-
-    display:none;
-
-    margin-top:22px;
-
-    padding:22px;
-
-    border:
-    1px solid #34313c;
-
-    background:#0b0b10;
-
-    border-radius:15px;
-
-}
-
-
-.result h3{
-
-    margin-bottom:7px;
-
-}
-
-
-.result p{
-
-    color:#888592;
-
-    font-size:13px;
-
-    margin-bottom:16px;
-
-}
-
-
-audio{
-
-    width:100%;
-
-}
-
-
-.download{
-
-    display:block;
-
-    margin-top:16px;
-
-    padding:14px;
-
-    text-align:center;
-
-    text-decoration:none;
-
-    color:white;
-
-    background:#24232b;
-
-    border:
-    1px solid #3c3945;
-
-    border-radius:10px;
-
-    font-weight:bold;
-
-}
-
-
-/* HISTORY */
-
-.history-section{
-
-    margin-top:30px;
-
-    padding-top:25px;
-
-    border-top:
-    1px solid #2d2b34;
-
-}
-
-
-.history-header{
-
-    display:flex;
-
-    justify-content:
-    space-between;
-
-    align-items:center;
-
-    gap:15px;
-
-    margin-bottom:17px;
-
-}
-
-
-.history-header h3{
-
-    font-size:18px;
-
-}
-
-
-.clear-button{
-
-    border:
-    1px solid #3a3743;
-
-    background:#1a191f;
-
-    color:#bbb8c4;
-
-    padding:
-    8px 13px;
-
-    border-radius:8px;
-
-    cursor:pointer;
-
-}
-
-
-.history-list{
-
-    display:grid;
-
-    gap:12px;
-
-}
-
-
-.history-item{
-
-    padding:16px;
-
-    background:#0b0b10;
-
-    border:
-    1px solid #2f2c37;
-
-    border-radius:12px;
-
-}
-
-
-.history-top{
-
-    display:flex;
-
-    justify-content:
-    space-between;
-
-    gap:15px;
-
-    margin-bottom:8px;
-
-}
-
-
-.history-title{
-
-    font-weight:bold;
-
-}
-
-
-.history-date{
-
-    color:#777480;
-
-    font-size:11px;
-
-}
-
-
-.history-meta{
-
-    color:#8e8a98;
-
-    font-size:12px;
-
-    margin-bottom:12px;
-
-}
-
-
-.history-actions{
-
-    display:flex;
-
-    gap:10px;
-
-    flex-wrap:wrap;
-
-}
-
-
-.history-actions a{
-
-    text-decoration:none;
-
-    color:white;
-
-    background:#24232b;
-
-    border:
-    1px solid #3c3945;
-
-    padding:
-    8px 12px;
-
-    border-radius:8px;
-
-    font-size:12px;
-
-}
-
-
-.empty-history{
-
-    color:#777480;
-
-    font-size:13px;
-
-}
-
-
-/* FOOTER */
-
-.footer{
-
-    text-align:center;
-
-    color:#5f5c68;
-
-    font-size:12px;
-
-    margin-top:25px;
-
-}
-
-
-/* MOBILE */
-
-@media(max-width:720px){
-
-    .grid{
-
-        grid-template-columns:
-        1fr;
-
-    }
-
-
-    .content{
-
-        padding:20px;
-
-    }
-
-
-    .header{
-
-        padding:
-        20px;
-
-    }
-
-
-    .history-top{
-
-        flex-direction:
-        column;
-
-    }
-
-}
-
-
-
-/* SEO CONTENT SECTION */
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#070709;--card:#111116;--card2:#0b0b10;--border:#2d2a35;--muted:#aaa7b6;--purple:#8d66ff;--purple2:#d76cff;--green:#75ff9e;--red:#ff9ca7}
+body{min-height:100vh;font-family:Arial,Helvetica,sans-serif;color:#fff;background:radial-gradient(circle at top,#21183b 0%,#0d0d13 35%,#070709 100%)}
+button,input,select,textarea{font:inherit}
+button{cursor:pointer}
+a{color:inherit}
+.page{width:94%;max-width:1150px;margin:auto;padding:25px 0 80px}
+.topbar{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:12px 0 25px}
+.brand{font-size:20px;font-weight:800}.brand span{color:#ad82ff}
+.top-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.balance-pill,.plan-pill{padding:10px 14px;border:1px solid #3a3743;border-radius:999px;background:#121118;color:#d8d5df;font-size:13px}
+.balance-pill strong{color:#91ffaf}
+.btn{border:1px solid #3a3743;background:#1a191f;color:#fff;padding:10px 15px;border-radius:10px;font-weight:700}
+.btn:hover{border-color:#7f5cff}
+.btn.primary{border:0;background:linear-gradient(90deg,#7050ff,#aa50ff)}
+.btn.google{background:#fff;color:#111;border-color:#fff}
+.btn.danger{color:#ffb1ba}
+.hidden{display:none!important}
+.hero{text-align:center;margin:20px 0 35px}
+.hero h1{font-size:clamp(36px,5vw,58px);margin-bottom:12px}
+.gradient{background:linear-gradient(90deg,#8d66ff,#d76cff);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero p{color:var(--muted);font-size:17px}
+.free-note{display:inline-block;margin-top:16px;padding:9px 14px;border:1px solid #3a3158;background:#171225;border-radius:999px;color:#cbbaff;font-size:13px}
+.studio{background:var(--card);border:1px solid var(--border);border-radius:24px;overflow:hidden;box-shadow:0 30px 90px rgba(0,0,0,.45)}
+.header{padding:23px 28px;display:flex;justify-content:space-between;align-items:center;gap:15px;border-bottom:1px solid #2b2932}
+.header h2{font-size:20px}.status{color:var(--green);font-size:13px}
+.content{padding:28px}
+textarea{width:100%;min-height:250px;resize:vertical;background:var(--card2);border:1px solid #35323d;border-radius:16px;color:#fff;padding:21px;font-size:17px;line-height:1.65;outline:none}
+textarea:focus{border-color:#8b5cff;box-shadow:0 0 0 3px rgba(139,92,255,.1)}
+textarea::placeholder{color:#706d7b}
+.text-info{display:flex;justify-content:space-between;gap:15px;margin-top:9px;color:#777480;font-size:12px;flex-wrap:wrap}
+.text-info .need{color:#cbbaff}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:20px}
+.control{background:#0c0c11;border:1px solid #2d2b34;border-radius:14px;padding:17px}
+.control label{display:block;color:#bdbac7;font-size:13px;margin-bottom:10px}
+select,input[type="text"],input[type="email"],input[type="password"]{width:100%;height:48px;border-radius:10px;border:1px solid #393641;background:#17171d;color:#fff;padding:0 13px;font-size:14px;outline:none}
+select:focus,input:focus{border-color:#8b5cff}
+.slider-top{display:flex;justify-content:space-between;margin-bottom:14px}.slider-top span{font-size:13px}.value{color:#ad82ff}
+input[type="range"]{width:100%;accent-color:#935eff}.style-description{margin-top:9px;color:#777480;font-size:12px;line-height:1.5}
+.action-grid{display:grid;grid-template-columns:1fr 1.5fr;gap:12px;margin-top:24px}
+.generate,.preview-btn{min-height:60px;border:0;border-radius:14px;color:#fff;font-size:16px;font-weight:bold}
+.generate{background:linear-gradient(90deg,#7050ff,#aa50ff)}
+.preview-btn{background:#24232b;border:1px solid #3c3945}
+.generate:disabled,.preview-btn:disabled{opacity:.55;cursor:not-allowed}
+.message{display:none;margin-top:18px;padding:14px;border-radius:11px;font-size:14px}
+.message.success{display:block;color:#91ffaf;background:#13321d;border:1px solid #28643c}
+.message.error{display:block;color:#ff9ca7;background:#35171c;border:1px solid #6a3038}
+.result{display:none;margin-top:22px;padding:22px;border:1px solid #34313c;background:var(--card2);border-radius:15px}
+.result h3{margin-bottom:7px}.result p{color:#888592;font-size:13px;margin-bottom:16px}audio{width:100%}
+.download{display:block;margin-top:16px;padding:14px;text-align:center;text-decoration:none;color:#fff;background:#24232b;border:1px solid #3c3945;border-radius:10px;font-weight:bold}
+.history-section{margin-top:30px;padding-top:25px;border-top:1px solid #2d2b34}
+.history-header{display:flex;justify-content:space-between;align-items:center;gap:15px;margin-bottom:17px}.history-header h3{font-size:18px}
+.clear-button{border:1px solid #3a3743;background:#1a191f;color:#bbb8c4;padding:8px 13px;border-radius:8px}
+.history-list{display:grid;gap:12px}.history-item{padding:16px;background:var(--card2);border:1px solid #2f2c37;border-radius:12px}
+.history-top{display:flex;justify-content:space-between;gap:15px;margin-bottom:8px}.history-title{font-weight:bold}.history-date{color:#777480;font-size:11px}
+.history-meta{color:#8e8a98;font-size:12px;margin-bottom:12px}.history-actions{display:flex;gap:10px;flex-wrap:wrap}
+.history-actions a{cursor:pointer;text-decoration:none;color:#fff;background:#24232b;border:1px solid #3c3945;padding:8px 12px;border-radius:8px;font-size:12px}
+.empty-history{color:#777480;font-size:13px}
+.pricing{margin-top:34px}.section-title{text-align:center;margin-bottom:20px}.section-title h2{font-size:30px;margin-bottom:8px}.section-title p{color:#8e8a98}
+.plan-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.plan-card{background:#111116;border:1px solid #2d2a35;border-radius:18px;padding:24px}.plan-card.featured{border-color:#8b5cff;box-shadow:0 0 0 1px rgba(139,92,255,.25)}
+.plan-card h3{font-size:21px}.price{font-size:34px;font-weight:800;margin:12px 0}.price small{font-size:13px;color:#8e8a98}
+.plan-card ul{list-style:none;color:#aaa7b6;line-height:2;margin:14px 0 20px}.plan-card .btn{width:100%}
+.account-card{margin-top:30px;background:#111116;border:1px solid #2d2a35;border-radius:20px;padding:24px}
+.account-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:16px}.stat{background:#0b0b10;border:1px solid #2f2c37;border-radius:12px;padding:15px}.stat small{color:#777480}.stat strong{display:block;margin-top:6px}
 .seo-section{margin-top:34px;padding:30px;background:#111116;border:1px solid #2d2a35;border-radius:20px;line-height:1.7;color:#bdbac7}
-.seo-section h2{color:#fff;font-size:26px;margin:0 0 12px}
-.seo-section h3{color:#fff;font-size:19px;margin:24px 0 8px}
-.seo-section p{margin:0 0 12px}
-.seo-section ul{padding-left:22px;margin:8px 0 14px}
-.seo-section li{margin:6px 0}
-.seo-section strong{color:#fff}
-@media(max-width:720px){.seo-section{padding:22px}.seo-section h2{font-size:23px}}
-
+.seo-section h2{color:#fff;font-size:26px;margin:0 0 12px}.seo-section h3{color:#fff;font-size:19px;margin:24px 0 8px}.seo-section p{margin:0 0 12px}.seo-section ul{padding-left:22px}
+.footer{text-align:center;color:#5f5c68;font-size:12px;margin-top:25px}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.75);display:flex;align-items:center;justify-content:center;padding:18px;z-index:50}
+.modal-card{width:min(440px,100%);background:#111116;border:1px solid #35323d;border-radius:20px;padding:24px;box-shadow:0 30px 100px #000}
+.modal-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}.modal-head button{background:none;border:0;color:#aaa;font-size:25px}
+.auth-tabs{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:15px}.auth-tabs button{padding:10px;border-radius:9px;border:1px solid #383540;background:#17171d;color:#fff}.auth-tabs button.active{border-color:#8b5cff;background:#241a3d}
+.auth-form{display:grid;gap:12px}.auth-form .btn{width:100%}.or{text-align:center;color:#777;margin:3px 0}
+.profile-wrap{display:flex;align-items:center;gap:9px}.avatar{width:34px;height:34px;border-radius:50%;object-fit:cover;background:#292633}
+@media(max-width:820px){.plan-grid{grid-template-columns:1fr}.account-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:720px){.grid,.action-grid{grid-template-columns:1fr}.content{padding:20px}.header{padding:20px}.history-top{flex-direction:column}.topbar{align-items:flex-start}.top-actions{justify-content:flex-end}.seo-section{padding:22px}}
+@media(max-width:480px){.account-grid{grid-template-columns:1fr}.balance-pill,.plan-pill{font-size:11px;padding:8px 10px}.brand{font-size:17px}}
 </style>
-
 </head>
-
-
 <body>
-
-
 <div class="page">
 
-
-<!-- HERO -->
+<div class="topbar">
+  <div class="brand">🎙 AI Voice <span>Studio Pro</span></div>
+  <div class="top-actions">
+    <div id="planPill" class="plan-pill hidden">FREE</div>
+    <div id="balancePill" class="balance-pill hidden"><strong id="topBalance">0</strong> characters</div>
+    <button id="loginOpen" class="btn">Login</button>
+    <button id="signupOpen" class="btn primary">Sign Up</button>
+    <div id="profileWrap" class="profile-wrap hidden">
+      <img id="profilePhoto" class="avatar" alt="Profile">
+      <button id="logoutButton" class="btn danger">Logout</button>
+    </div>
+  </div>
+</div>
 
 <div class="hero">
-
-<h1>
-
-AI Voice
-<span class="gradient">
-Studio Pro
-</span>
-
-</h1>
-
-
-<p>
-Natural AI narration for stories, videos, documentaries and creative projects.
-</p>
-
+  <h1>AI Voice <span class="gradient">Studio Pro</span></h1>
+  <p>Natural AI narration for stories, videos, documentaries and creative projects.</p>
+  <div class="free-note">🎁 New account: 1,000 free characters • Preview does not deduct balance</div>
 </div>
-
-
-
-<!-- STUDIO -->
 
 <div class="studio">
+  <div class="header">
+    <h2>🎙 Text to Speech</h2>
+    <div class="status" id="engineStatus">● Loading Voice Library...</div>
+  </div>
 
+  <div class="content">
+    <textarea id="text" maxlength="50000" placeholder="Paste your story, narration or script here..."></textarea>
+    <div class="text-info">
+      <span>Long Script Mode</span>
+      <span><span id="count">0</span> / 50,000 characters</span>
+      <span class="need">Download cost: <strong id="neededChars">0</strong> characters</span>
+    </div>
 
-<div class="header">
+    <div class="grid">
+      <div class="control"><label for="language">Language</label><select id="language"><option>Loading...</option></select></div>
+      <div class="control"><label for="gender">Gender</label><select id="gender"><option value="all">All Voices</option><option value="Male">Male</option><option value="Female">Female</option></select></div>
+    </div>
 
-<h2>
-🎙 Text to Speech
-</h2>
+    <div class="grid">
+      <div class="control"><label for="voice">Voice</label><select id="voice"><option>Loading Voice Library...</option></select></div>
+      <div class="control">
+        <label for="style">Narration Style</label>
+        <select id="style">
+          <option value="natural">Natural Voice</option><option value="narration">Story Narration</option>
+          <option value="horror">Horror / Dark</option><option value="emotional">Emotional</option>
+          <option value="kids">Kids Story</option><option value="documentary">Documentary</option>
+          <option value="energetic">Energetic</option><option value="cinematic">Deep Cinematic</option>
+        </select>
+        <div class="style-description" id="styleDescription">Balanced natural speech.</div>
+      </div>
+    </div>
 
+    <div class="grid">
+      <div class="control"><div class="slider-top"><span>Voice Speed</span><span class="value" id="rateValue">0%</span></div><input id="rate" type="range" min="-50" max="50" value="0"></div>
+      <div class="control"><div class="slider-top"><span>Pitch</span><span class="value" id="pitchValue">0 Hz</span></div><input id="pitch" type="range" min="-50" max="50" value="0"></div>
+    </div>
 
-<div
-    class="status"
-    id="engineStatus"
->
-● Loading Voice Library...
+    <div class="grid">
+      <div class="control"><label for="filename">MP3 File Name</label><input id="filename" type="text" value="AI-Voice" maxlength="80" placeholder="Example: Episode-01"></div>
+      <div class="control"><label>Voice Library</label><div id="libraryInfo" class="style-description">Connecting to Voice Library...</div></div>
+    </div>
+
+    <div class="action-grid">
+      <button type="button" class="preview-btn" id="previewButton">▶ Free Preview</button>
+      <button type="button" class="generate" id="generateButton">✨ Generate Full Voice</button>
+    </div>
+
+    <div id="message" class="message"></div>
+
+    <div id="previewResult" class="result">
+      <h3>▶ Free Voice Preview</h3>
+      <p>Short demo only. No characters deducted.</p>
+      <audio id="previewPlayer" controls></audio>
+    </div>
+
+    <div id="result" class="result">
+      <h3>🎧 Full Voice Generated</h3>
+      <p id="resultInfo">Characters are deducted only on the first successful download.</p>
+      <a id="downloadButton" class="download" href="#">⬇ Unlock & Download MP3</a>
+    </div>
+
+    <div class="history-section">
+      <div class="history-header"><h3>🕘 Your Audio History</h3><button type="button" class="clear-button" id="clearHistoryButton">Clear History</button></div>
+      <div class="history-list" id="historyList"><div class="empty-history">Login to see your audio history.</div></div>
+    </div>
+  </div>
 </div>
 
-</div>
-
-
-
-<div class="content">
-
-
-<!-- SCRIPT -->
-
-<textarea
-    id="text"
-    maxlength="50000"
-    placeholder="Paste your story, narration or script here..."
-></textarea>
-
-
-<div class="text-info">
-
-<span>
-Long Script Mode
-</span>
-
-<span>
-<span id="count">0</span>
-/ 50,000 characters
-</span>
-
-</div>
-
-
-
-<!-- LANGUAGE + GENDER -->
-
-<div class="grid">
-
-
-<div class="control">
-
-<label for="language">
-Language
-</label>
-
-<select id="language">
-
-<option>
-Loading...
-</option>
-
-</select>
-
-</div>
-
-
-
-<div class="control">
-
-<label for="gender">
-Gender
-</label>
-
-<select id="gender">
-
-<option value="all">
-All Voices
-</option>
-
-<option value="Male">
-Male
-</option>
-
-<option value="Female">
-Female
-</option>
-
-</select>
-
-</div>
-
-
-</div>
-
-
-
-<!-- VOICE + STYLE -->
-
-<div class="grid">
-
-
-<div class="control">
-
-<label for="voice">
-Voice
-</label>
-
-<select id="voice">
-
-<option>
-Loading Voice Library...
-</option>
-
-</select>
-
-</div>
-
-
-
-<div class="control">
-
-<label for="style">
-Narration Style
-</label>
-
-
-<select id="style">
-
-<option value="natural">
-Natural Voice
-</option>
-
-<option value="narration">
-Story Narration
-</option>
-
-<option value="horror">
-Horror / Dark
-</option>
-
-<option value="emotional">
-Emotional
-</option>
-
-<option value="kids">
-Kids Story
-</option>
-
-<option value="documentary">
-Documentary
-</option>
-
-<option value="energetic">
-Energetic
-</option>
-
-<option value="cinematic">
-Deep Cinematic
-</option>
-
-</select>
-
-
-<div
-    class="style-description"
-    id="styleDescription"
->
-Balanced natural speech.
-</div>
-
-</div>
-
-
-</div>
-
-
-
-<!-- SPEED + PITCH -->
-
-<div class="grid">
-
-
-<div class="control">
-
-
-<div class="slider-top">
-
-<span>
-Voice Speed
-</span>
-
-<span
-    class="value"
-    id="rateValue"
->
-0%
-</span>
-
-</div>
-
-
-<input
-    id="rate"
-    type="range"
-    min="-50"
-    max="50"
-    value="0"
->
-
-</div>
-
-
-
-<div class="control">
-
-
-<div class="slider-top">
-
-<span>
-Pitch
-</span>
-
-<span
-    class="value"
-    id="pitchValue"
->
-0 Hz
-</span>
-
-</div>
-
-
-<input
-    id="pitch"
-    type="range"
-    min="-50"
-    max="50"
-    value="0"
->
-
-</div>
-
-
-</div>
-
-
-
-<!-- FILE NAME -->
-
-<div class="grid">
-
-
-<div class="control">
-
-<label for="filename">
-MP3 File Name
-</label>
-
-<input
-    id="filename"
-    type="text"
-    value="AI-Voice"
-    maxlength="80"
-    placeholder="Example: Episode-01-Horror"
->
-
-</div>
-
-
-
-<div class="control">
-
-<label>
-Voice Library
-</label>
-
-<div
-    id="libraryInfo"
-    class="style-description"
->
-Connecting to Voice Library...
-</div>
-
-</div>
-
-
-</div>
-
-
-
-<!-- GENERATE -->
-
-<button
-    type="button"
-    class="generate"
-    id="generateButton"
->
-✨ Generate Voice
-</button>
-
-
-
-<!-- MESSAGE -->
-
-<div
-    id="message"
-    class="message"
-></div>
-
-
-
-<!-- RESULT -->
-
-<div
-    id="result"
-    class="result"
->
-
-
-<h3>
-🎧 Your Voice is Ready
-</h3>
-
-
-<p id="resultInfo">
-Generated successfully.
-</p>
-
-
-<audio
-    id="audioPlayer"
-    controls
-></audio>
-
-
-<a
-    id="downloadButton"
-    class="download"
-    href="#"
->
-⬇ Download MP3
-</a>
-
-
-</div>
-
-
-
-<!-- HISTORY -->
-
-<div class="history-section">
-
-
-<div class="history-header">
-
-<h3>
-🕘 Generated Audio History
-</h3>
-
-
-<button
-    type="button"
-    class="clear-button"
-    id="clearHistoryButton"
->
-Clear History
-</button>
-
-</div>
-
-
-<div
-    class="history-list"
-    id="historyList"
->
-
-<div class="empty-history">
-Loading history...
-</div>
-
-</div>
-
-
-</div>
-
-
-</div>
-
-</div>
-
-
-
-
-<!-- SEO / INFORMATION CONTENT -->
-<section class="seo-section" aria-labelledby="about-ai-tts">
-  <h2 id="about-ai-tts">Free AI Text to Speech Online</h2>
-  <p><strong>AI Voice Studio Pro</strong> is a free online text-to-speech tool that converts written text into natural-sounding AI speech. Create voiceovers for YouTube videos, stories, documentaries, presentations, podcasts and other creative projects directly in your browser.</p>
-
-  <h3>How to Convert Text to Speech</h3>
-  <ul>
-    <li>Paste or type your script into the text box.</li>
-    <li>Select a language, voice and narration style.</li>
-    <li>Adjust voice speed and pitch if needed.</li>
-    <li>Click <strong>Generate Voice</strong>, preview the audio and download the generated MP3.</li>
-  </ul>
-
-  <h3>AI Voice Generator for Stories and Videos</h3>
-  <p>Choose narration styles including natural voice, story narration, horror, emotional, kids story, documentary, energetic and deep cinematic. The tool is designed for long scripts as well as shorter voiceovers.</p>
-
-  <h3>Multiple Languages and Voices</h3>
-  <p>AI Voice Studio Pro can provide voices for supported languages such as US English, UK English, Australian English, Indian English, Hindi, Marathi, Tamil, Telugu, Bengali, Gujarati, Kannada and Malayalam, depending on the available voice library.</p>
-
-  <h3>Common Uses</h3>
-  <p>Use text-to-speech audio for YouTube narration, animated stories, educational videos, documentaries, social media content, presentations, accessibility and creative audio projects.</p>
-
-  <h3>Frequently Asked Questions</h3>
-  <p><strong>Is AI Voice Studio Pro free?</strong><br>Yes. The website currently offers its text-to-speech interface as a free online tool.</p>
-  <p><strong>Can I download the generated voice?</strong><br>Yes. After successful generation, the audio can be previewed and downloaded as an MP3.</p>
-  <p><strong>Can I use long scripts?</strong><br>The current interface supports scripts up to 50,000 characters.</p>
+<section class="pricing" id="pricing">
+  <div class="section-title"><h2>Choose Your Plan</h2><p>Validity or available character balance applies according to your account plan.</p></div>
+  <div class="plan-grid">
+    <div class="plan-card"><h3>Starter</h3><div class="price">₹100 <small>/ 5 days</small></div><ul><li>✓ 15,000 characters</li><li>✓ Voice preview</li><li>✓ MP3 download</li></ul><button class="btn buy-plan" data-plan="starter">Buy Starter</button></div>
+    <div class="plan-card featured"><h3>Basic</h3><div class="price">₹200 <small>/ 10 days</small></div><ul><li>✓ 35,000 characters</li><li>✓ Voice preview</li><li>✓ MP3 download</li></ul><button class="btn primary buy-plan" data-plan="basic">Buy Basic</button></div>
+    <div class="plan-card"><h3>Pro</h3><div class="price">₹600 <small>/ 30 days</small></div><ul><li>✓ 100,000 characters</li><li>✓ Voice preview</li><li>✓ MP3 download</li></ul><button class="btn buy-plan" data-plan="pro">Buy Pro</button></div>
+  </div>
 </section>
 
-<div class="footer">
-AI Voice Studio Pro • Local AI Text-to-Speech
+<section id="accountCard" class="account-card hidden">
+  <h2>My Account</h2>
+  <div class="account-grid">
+    <div class="stat"><small>Name</small><strong id="accountName">-</strong></div>
+    <div class="stat"><small>Plan</small><strong id="accountPlan">FREE</strong></div>
+    <div class="stat"><small>Characters Remaining</small><strong id="accountBalance">0</strong></div>
+    <div class="stat"><small>Plan Expiry</small><strong id="accountExpiry">-</strong></div>
+  </div>
+</section>
+
+<section class="seo-section" aria-labelledby="about-ai-tts">
+  <h2 id="about-ai-tts">AI Text to Speech Online</h2>
+  <p><strong>AI Voice Studio Pro</strong> converts written text into natural-sounding AI speech for YouTube videos, stories, documentaries, presentations and creative projects.</p>
+  <h3>How it works</h3>
+  <ul><li>Create an account and receive 1,000 free characters.</li><li>Paste your text and select a language, voice and narration style.</li><li>Use Free Preview to test a short demo without character deduction.</li><li>Generate your full voice and characters are deducted on the first successful download.</li></ul>
+  <h3>Multiple Languages and Voices</h3>
+  <p>Supported voices may include US English, UK English, Australian English, Indian English, Hindi, Marathi, Tamil, Telugu, Bengali, Gujarati, Kannada and Malayalam, depending on the available voice library.</p>
+</section>
+
+<div class="footer">AI Voice Studio Pro • AI Text-to-Speech</div>
 </div>
 
-
+<div id="authModal" class="modal hidden">
+  <div class="modal-card">
+    <div class="modal-head"><h2 id="authTitle">Login</h2><button id="closeModal" aria-label="Close">×</button></div>
+    <div class="auth-tabs"><button id="loginTab" class="active">Login</button><button id="signupTab">Sign Up</button></div>
+    <form id="loginForm" class="auth-form">
+      <input id="loginEmail" type="email" placeholder="Email" required>
+      <input id="loginPassword" type="password" placeholder="Password" required minlength="8">
+      <button class="btn primary" type="submit">Login</button>
+    </form>
+    <form id="signupForm" class="auth-form hidden">
+      <input id="signupName" type="text" placeholder="Your name" required>
+      <input id="signupEmail" type="email" placeholder="Email" required>
+      <input id="signupPassword" type="password" placeholder="Password (minimum 8 characters)" required minlength="8">
+      <button class="btn primary" type="submit">Create Account</button>
+    </form>
+    <div class="or">or</div>
+    <button id="googleLogin" class="btn google" style="width:100%">Continue with Google</button>
+    <div id="authMessage" class="message" style="margin-top:12px"></div>
+  </div>
 </div>
 
-
-
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 <script>
+const $=id=>document.getElementById(id);
+const text=$("text"),count=$("count"),neededChars=$("neededChars"),language=$("language"),gender=$("gender"),voice=$("voice"),style=$("style");
+const rate=$("rate"),pitch=$("pitch"),rateValue=$("rateValue"),pitchValue=$("pitchValue"),filename=$("filename");
+const message=$("message"),result=$("result"),previewResult=$("previewResult"),previewPlayer=$("previewPlayer"),downloadButton=$("downloadButton");
+const historyList=$("historyList"),generateButton=$("generateButton"),previewButton=$("previewButton");
+let allVoices=[], currentUser=null;
 
-
-/* =====================================================
-   ELEMENTS
-===================================================== */
-
-const text =
-document.getElementById("text");
-
-const count =
-document.getElementById("count");
-
-const language =
-document.getElementById("language");
-
-const gender =
-document.getElementById("gender");
-
-const voice =
-document.getElementById("voice");
-
-const style =
-document.getElementById("style");
-
-const styleDescription =
-document.getElementById(
-    "styleDescription"
-);
-
-const rate =
-document.getElementById("rate");
-
-const pitch =
-document.getElementById("pitch");
-
-const rateValue =
-document.getElementById(
-    "rateValue"
-);
-
-const pitchValue =
-document.getElementById(
-    "pitchValue"
-);
-
-const filename =
-document.getElementById(
-    "filename"
-);
-
-const generateButton =
-document.getElementById(
-    "generateButton"
-);
-
-const message =
-document.getElementById(
-    "message"
-);
-
-const result =
-document.getElementById(
-    "result"
-);
-
-const resultInfo =
-document.getElementById(
-    "resultInfo"
-);
-
-const audioPlayer =
-document.getElementById(
-    "audioPlayer"
-);
-
-const downloadButton =
-document.getElementById(
-    "downloadButton"
-);
-
-const libraryInfo =
-document.getElementById(
-    "libraryInfo"
-);
-
-const engineStatus =
-document.getElementById(
-    "engineStatus"
-);
-
-const historyList =
-document.getElementById(
-    "historyList"
-);
-
-const clearHistoryButton =
-document.getElementById(
-    "clearHistoryButton"
-);
-
-
-let allVoices = [];
-
-
-
-/* =====================================================
-   LANGUAGES
-===================================================== */
-
-const languageNames = {
-
-"en-US":
-"English — United States",
-
-"en-GB":
-"English — United Kingdom",
-
-"en-AU":
-"English — Australia",
-
-"en-IN":
-"English — India",
-
-"hi-IN":
-"Hindi — India",
-
-"mr-IN":
-"Marathi — India",
-
-"ta-IN":
-"Tamil — India",
-
-"te-IN":
-"Telugu — India",
-
-"bn-IN":
-"Bengali — India",
-
-"gu-IN":
-"Gujarati — India",
-
-"kn-IN":
-"Kannada — India",
-
-"ml-IN":
-"Malayalam — India"
-
+const languageNames={"en-US":"English — United States","en-GB":"English — United Kingdom","en-AU":"English — Australia","en-IN":"English — India","hi-IN":"Hindi — India","mr-IN":"Marathi — India","ta-IN":"Tamil — India","te-IN":"Telugu — India","bn-IN":"Bengali — India","gu-IN":"Gujarati — India","kn-IN":"Kannada — India","ml-IN":"Malayalam — India"};
+const presets={
+ natural:{rate:0,pitch:0,description:"Balanced natural speech for general voiceovers."},
+ narration:{rate:-8,pitch:-2,description:"Smooth storytelling pace for YouTube stories and narration."},
+ horror:{rate:-18,pitch:-8,description:"Slower and deeper delivery for dark or suspenseful stories."},
+ emotional:{rate:-12,pitch:-3,description:"Soft, slower delivery for emotional scenes."},
+ kids:{rate:5,pitch:4,description:"Brighter and slightly faster voice for children's stories."},
+ documentary:{rate:-5,pitch:-2,description:"Controlled and serious pacing for documentary narration."},
+ energetic:{rate:12,pitch:3,description:"Fast and lively delivery for shorts and energetic videos."},
+ cinematic:{rate:-15,pitch:-10,description:"Deep, slower cinematic narration for dramatic scenes."}
 };
 
-
-
-/* =====================================================
-   STYLE PRESETS
-===================================================== */
-
-const presets = {
-
-
-natural:{
-
-rate:0,
-pitch:0,
-
-description:
-"Balanced natural speech for general voiceovers."
-
-},
-
-
-narration:{
-
-rate:-8,
-pitch:-2,
-
-description:
-"Smooth storytelling pace for YouTube stories and narration."
-
-},
-
-
-horror:{
-
-rate:-18,
-pitch:-8,
-
-description:
-"Slower and deeper delivery for dark or suspenseful stories."
-
-},
-
-
-emotional:{
-
-rate:-12,
-pitch:-3,
-
-description:
-"Soft, slower delivery for emotional scenes."
-
-},
-
-
-kids:{
-
-rate:5,
-pitch:4,
-
-description:
-"Brighter and slightly faster voice for children's stories."
-
-},
-
-
-documentary:{
-
-rate:-5,
-pitch:-2,
-
-description:
-"Controlled and serious pacing for documentary narration."
-
-},
-
-
-energetic:{
-
-rate:12,
-pitch:3,
-
-description:
-"Fast and lively delivery for shorts and energetic videos."
-
-},
-
-
-cinematic:{
-
-rate:-15,
-pitch:-10,
-
-description:
-"Deep, slower cinematic narration for dramatic scenes."
-
-}
-
-
-};
-
-
-
-/* =====================================================
-   CHARACTER COUNTER
-===================================================== */
-
-text.addEventListener(
-"input",
-function(){
-
-count.textContent =
-text.value.length;
-
-}
-);
-
-
-
-/* =====================================================
-   STYLE
-===================================================== */
-
-style.addEventListener(
-"change",
-applyStyle
-);
-
-
-function applyStyle(){
-
-const preset =
-presets[
-style.value
-];
-
-
-if(!preset){
-return;
-}
-
-
-rate.value =
-preset.rate;
-
-
-pitch.value =
-preset.pitch;
-
-
-styleDescription.textContent =
-preset.description;
-
-
-updateSliders();
-
-}
-
-
-
-/* =====================================================
-   SLIDERS
-===================================================== */
-
-function updateSliders(){
-
-const r =
-parseInt(
-rate.value
-);
-
-
-const p =
-parseInt(
-pitch.value
-);
-
-
-rateValue.textContent =
-(r > 0 ? "+" : "")
-+
-r
-+
-"%";
-
-
-pitchValue.textContent =
-(p > 0 ? "+" : "")
-+
-p
-+
-" Hz";
-
-}
-
-
-rate.addEventListener(
-"input",
-updateSliders
-);
-
-
-pitch.addEventListener(
-"input",
-updateSliders
-);
-
-
-
-/* =====================================================
-   VOICE LIBRARY
-===================================================== */
+function showError(v){message.className="message error";message.textContent=v;message.style.display="block"}
+function showSuccess(v){message.className="message success";message.textContent=v;message.style.display="block"}
+function authMsg(v,error=false){const e=$("authMessage");e.className="message "+(error?"error":"success");e.textContent=v;e.style.display="block"}
+function requireLogin(){if(currentUser)return true;openAuth("login");showError("Please login first. New users receive 1,000 free characters.");return false}
+function fmtDate(v){if(!v)return "—";try{return new Date(v).toLocaleString()}catch{return v}}
+
+text.addEventListener("input",()=>{count.textContent=text.value.length;neededChars.textContent=text.value.trim().length});
+style.addEventListener("change",applyStyle);rate.addEventListener("input",updateSliders);pitch.addEventListener("input",updateSliders);
+function applyStyle(){const p=presets[style.value];if(!p)return;rate.value=p.rate;pitch.value=p.pitch;$("styleDescription").textContent=p.description;updateSliders()}
+function updateSliders(){const r=parseInt(rate.value),p=parseInt(pitch.value);rateValue.textContent=(r>0?"+":"")+r+"%";pitchValue.textContent=(p>0?"+":"")+p+" Hz"}
 
 async function loadVoiceLibrary(){
-
-try{
-
-
-engineStatus.textContent =
-"● Loading Voice Library...";
-
-
-const response =
-await fetch(
-"/voices"
-);
-
-
-const data =
-await response.json();
-
-
-if(
-!response.ok
-||
-!data.success
-){
-
-throw new Error(
-data.error
-||
-"Unable to load voices."
-);
-
+ try{
+  $("engineStatus").textContent="● Loading Voice Library...";
+  const response=await fetch("/voices"),data=await response.json();
+  if(!response.ok||!data.success)throw new Error(data.error||"Unable to load voices.");
+  allVoices=data.voices; loadLanguages(); $("engineStatus").textContent="● AI Engine Ready"; $("libraryInfo").textContent=allVoices.length+" voices available.";
+ }catch(e){$("engineStatus").textContent="● Voice Library Error";$("libraryInfo").textContent="Unable to load Voice Library.";showError("Voice Library: "+e.message)}
 }
-
-
-allVoices =
-data.voices;
-
-
-loadLanguages();
-
-
-engineStatus.textContent =
-"● AI Engine Ready";
-
-
-libraryInfo.textContent =
-allVoices.length
-+
-" voices available.";
-
-
-}
-catch(error){
-
-
-engineStatus.textContent =
-"● Voice Library Error";
-
-
-libraryInfo.textContent =
-"Unable to load Voice Library.";
-
-
-showError(
-"Voice Library: "
-+
-error.message
-);
-
-
-}
-
-}
-
-
-
-/* =====================================================
-   LANGUAGES
-===================================================== */
-
 function loadLanguages(){
-
-
-const locales =
-[
-...new Set(
-allVoices.map(
-item => item.locale
-)
-)
-];
-
-
-language.innerHTML =
-"";
-
-
-locales.forEach(
-function(locale){
-
-
-const option =
-document.createElement(
-"option"
-);
-
-
-option.value =
-locale;
-
-
-option.textContent =
-languageNames[locale]
-||
-locale;
-
-
-language.appendChild(
-option
-);
-
-
+ const locales=[...new Set(allVoices.map(x=>x.locale))];language.innerHTML="";
+ locales.forEach(locale=>{const o=document.createElement("option");o.value=locale;o.textContent=languageNames[locale]||locale;language.appendChild(o)});
+ if(locales.includes("en-US"))language.value="en-US";loadFilteredVoices()
 }
-);
-
-
-if(
-locales.includes(
-"en-US"
-)
-){
-
-language.value =
-"en-US";
-
-}
-
-
-loadFilteredVoices();
-
-}
-
-
-
-language.addEventListener(
-"change",
-loadFilteredVoices
-);
-
-
-gender.addEventListener(
-"change",
-loadFilteredVoices
-);
-
-
-
-/* =====================================================
-   FILTER VOICES
-===================================================== */
-
 function loadFilteredVoices(){
+ let f=allVoices.filter(x=>x.locale===language.value);if(gender.value!=="all")f=f.filter(x=>x.gender===gender.value);voice.innerHTML="";
+ if(!f.length){voice.innerHTML='<option value="">No voice available</option>';return}
+ f.forEach(x=>{const o=document.createElement("option");o.value=x.name;o.textContent=x.name.replace(x.locale+"-","").replace("Neural","")+" — "+x.gender;voice.appendChild(o)})
+}
+language.addEventListener("change",loadFilteredVoices);gender.addEventListener("change",loadFilteredVoices);
 
-
-let filtered =
-allVoices.filter(
-item =>
-item.locale
-===
-language.value
-);
-
-
-if(
-gender.value
-!==
-"all"
-){
-
-filtered =
-filtered.filter(
-item =>
-item.gender
-===
-gender.value
-);
-
+function makeForm(){
+ const script=text.value.trim();if(!script)throw new Error("Please enter your script.");if(!voice.value)throw new Error("Please select a voice.");
+ const fd=new FormData();fd.append("text",script);fd.append("voice",voice.value);fd.append("style",style.value);fd.append("filename",filename.value);
+ const r=parseInt(rate.value),p=parseInt(pitch.value);fd.append("rate",(r>=0?"+":"")+r+"%");fd.append("pitch",(p>=0?"+":"")+p+"Hz");return fd
 }
 
-
-voice.innerHTML =
-"";
-
-
-if(
-filtered.length
-===
-0
-){
-
-const option =
-document.createElement(
-"option"
-);
-
-option.value =
-"";
-
-option.textContent =
-"No voice available";
-
-voice.appendChild(
-option
-);
-
-return;
-
-}
-
-
-filtered.forEach(
-function(item){
-
-
-const option =
-document.createElement(
-"option"
-);
-
-
-option.value =
-item.name;
-
-
-let cleanName =
-item.name
-.replace(
-item.locale + "-",
-""
-)
-.replace(
-"Neural",
-""
-);
-
-
-option.textContent =
-cleanName
-+
-" — "
-+
-item.gender;
-
-
-voice.appendChild(
-option
-);
-
-
-}
-);
-
-}
-
-
-
-/* =====================================================
-   MESSAGE
-===================================================== */
-
-function showError(textValue){
-
-message.className =
-"message error";
-
-
-message.textContent =
-textValue;
-
-
-message.style.display =
-"block";
-
-}
-
-
-
-function showSuccess(textValue){
-
-message.className =
-"message success";
-
-
-message.textContent =
-textValue;
-
-
-message.style.display =
-"block";
-
-}
-
-
-
-/* =====================================================
-   GENERATE
-===================================================== */
-
-generateButton.addEventListener(
-"click",
-generateVoice
-);
-
-
-
-async function generateVoice(){
-
-
-const script =
-text.value.trim();
-
-
-if(!script){
-
-showError(
-"Please enter your script."
-);
-
-return;
-
-}
-
-
-if(!voice.value){
-
-showError(
-"Please select a voice."
-);
-
-return;
-
-}
-
-
-result.style.display =
-"none";
-
-
-message.style.display =
-"none";
-
-
-generateButton.disabled =
-true;
-
-
-generateButton.textContent =
-"⏳ Generating Voice...";
-
-
-try{
-
-
-const formData =
-new FormData();
-
-
-formData.append(
-"text",
-script
-);
-
-
-formData.append(
-"voice",
-voice.value
-);
-
-
-formData.append(
-"style",
-style.value
-);
-
-
-formData.append(
-"filename",
-filename.value
-);
-
-
-const r =
-parseInt(
-rate.value
-);
-
-
-const p =
-parseInt(
-pitch.value
-);
-
-
-formData.append(
-"rate",
-(r >= 0 ? "+" : "")
-+
-r
-+
-"%"
-);
-
-
-formData.append(
-"pitch",
-(p >= 0 ? "+" : "")
-+
-p
-+
-"Hz"
-);
-
-
-
-const response =
-await fetch(
-
-"/generate",
-
-{
-
-method:"POST",
-
-body:formData
-
-}
-
-);
-
-
-const data =
-await response.json();
-
-
-if(
-!response.ok
-||
-!data.success
-){
-
-throw new Error(
-data.error
-||
-"Voice generation failed."
-);
-
-}
-
-
-
-audioPlayer.src =
-data.audio_url
-+
-"?t="
-+
-Date.now();
-
-
-downloadButton.href =
-data.download_url;
-
-
-audioPlayer.load();
-
-
-resultInfo.textContent =
-"Style: "
-+
-style.options[
-style.selectedIndex
-].text
-+
-" • Voice: "
-+
-voice.options[
-voice.selectedIndex
-].text;
-
-
-result.style.display =
-"block";
-
-
-showSuccess(
-"✓ Voice generated successfully!"
-);
-
-
-await loadHistory();
-
-
-result.scrollIntoView({
-
-behavior:"smooth",
-
-block:"center"
-
+previewButton.addEventListener("click",async()=>{
+ if(!requireLogin())return;message.style.display="none";previewButton.disabled=true;previewButton.textContent="⏳ Creating Preview...";
+ try{
+  const response=await fetch("/preview",{method:"POST",body:makeForm()}),data=await response.json();
+  if(!response.ok||!data.success)throw new Error(data.error||"Preview failed.");
+  previewPlayer.src=data.preview_url+"?t="+Date.now();previewPlayer.load();previewResult.style.display="block";showSuccess("✓ Free preview ready. 0 characters deducted.");
+ }catch(e){showError(e.message)}finally{previewButton.disabled=false;previewButton.textContent="▶ Free Preview"}
 });
 
+generateButton.addEventListener("click",async()=>{
+ if(!requireLogin())return;result.style.display="none";message.style.display="none";generateButton.disabled=true;generateButton.textContent="⏳ Generating Full Voice...";
+ try{
+  const response=await fetch("/generate",{method:"POST",body:makeForm()}),data=await response.json();
+  if(!response.ok||!data.success)throw new Error(data.error||"Voice generation failed.");
+  downloadButton.href=data.download_url;
+  $("resultInfo").textContent=data.characters+" characters • No charge yet. Your balance is deducted only on first successful download.";
+  result.style.display="block";showSuccess("✓ Full voice generated. Click Unlock & Download MP3 when ready.");await loadHistory();result.scrollIntoView({behavior:"smooth",block:"center"});
+ }catch(e){showError(e.message)}finally{generateButton.disabled=false;generateButton.textContent="✨ Generate Full Voice"}
+});
 
+downloadButton.addEventListener("click",()=>{setTimeout(()=>{loadMe();loadHistory()},1500)});
+
+async function loadMe(){
+ try{
+  const r=await fetch("/auth/me",{credentials:"same-origin"}),d=await r.json();currentUser=d.logged_in?d.user:null;renderUser();
+  if(currentUser){await loadHistory();await loadAccount()}else{historyList.innerHTML='<div class="empty-history">Login to see your audio history.</div>'}
+ }catch(e){currentUser=null;renderUser()}
 }
-catch(error){
-
-
-showError(
-"Error: "
-+
-error.message
-);
-
-
+function renderUser(){
+ const logged=!!currentUser;$("loginOpen").classList.toggle("hidden",logged);$("signupOpen").classList.toggle("hidden",logged);$("profileWrap").classList.toggle("hidden",!logged);
+ $("balancePill").classList.toggle("hidden",!logged);$("planPill").classList.toggle("hidden",!logged);$("accountCard").classList.toggle("hidden",!logged);
+ if(logged){
+  $("topBalance").textContent=currentUser.character_balance.toLocaleString();$("planPill").textContent=(currentUser.plan||"free").toUpperCase();
+  $("profilePhoto").src=currentUser.profile_photo||"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Crect width='100%25' height='100%25' fill='%23292633'/%3E%3Ctext x='50%25' y='58%25' text-anchor='middle' fill='white' font-size='18'%3E%F0%9F%91%A4%3C/text%3E%3C/svg%3E";
+  $("accountName").textContent=currentUser.name||currentUser.email;$("accountPlan").textContent=(currentUser.plan||"free").toUpperCase();$("accountBalance").textContent=currentUser.character_balance.toLocaleString();$("accountExpiry").textContent=fmtDate(currentUser.plan_expiry);
+ }
 }
-finally{
-
-
-generateButton.disabled =
-false;
-
-
-generateButton.textContent =
-"✨ Generate Voice";
-
-
-}
-
-}
-
-
-
-/* =====================================================
-   HISTORY
-===================================================== */
+async function loadAccount(){try{const r=await fetch("/account"),d=await r.json();if(r.ok&&d.success){currentUser=d.user;renderUser()}}catch{}}
 
 async function loadHistory(){
-
-
-try{
-
-
-const response =
-await fetch(
-"/history"
-);
-
-
-const data =
-await response.json();
-
-
-if(
-!data.success
-){
-
-throw new Error(
-"History unavailable."
-);
-
+ if(!currentUser)return;
+ try{
+  const r=await fetch("/history"),d=await r.json();if(!r.ok||!d.success)throw new Error();renderHistory(d.history)
+ }catch{historyList.innerHTML='<div class="empty-history">History could not be loaded.</div>'}
 }
-
-
-renderHistory(
-data.history
-);
-
-
-}
-catch(error){
-
-
-historyList.innerHTML =
-'<div class="empty-history">History could not be loaded.</div>';
-
-
-}
-
-}
-
-
-
-/* =====================================================
-   RENDER HISTORY
-===================================================== */
-
 function renderHistory(items){
+ historyList.innerHTML="";if(!items||!items.length){historyList.innerHTML='<div class="empty-history">No generated audio yet.</div>';return}
+ items.forEach(item=>{
+  const card=document.createElement("div");card.className="history-item";
+  const status=item.charged?"Downloaded / Charged":"Ready • Not charged";
+  card.innerHTML='<div class="history-top"><div class="history-title"></div><div class="history-date"></div></div><div class="history-meta"></div><div class="history-actions"></div>';
+  card.querySelector(".history-title").textContent=item.title;card.querySelector(".history-date").textContent=fmtDate(item.created_at);
+  card.querySelector(".history-meta").textContent=item.style+" • "+item.voice+" • "+item.characters+" characters • "+status;
+  const a=document.createElement("a");a.href=item.download_url;a.textContent=item.charged?"⬇ Download Again":"⬇ Unlock & Download";a.addEventListener("click",()=>setTimeout(()=>{loadMe();loadHistory()},1500));
+  card.querySelector(".history-actions").appendChild(a);historyList.appendChild(card)
+ })
+}
+$("clearHistoryButton").addEventListener("click",async()=>{if(!requireLogin())return;if(!confirm("Clear your generated audio history?"))return;try{const r=await fetch("/history/clear",{method:"POST"}),d=await r.json();if(!r.ok||!d.success)throw new Error(d.error||"Could not clear history.");await loadHistory();showSuccess("History cleared.")}catch(e){showError(e.message)}});
 
+function openAuth(mode){$("authModal").classList.remove("hidden");setAuthMode(mode)}
+function closeAuth(){$("authModal").classList.add("hidden");$("authMessage").style.display="none"}
+function setAuthMode(mode){
+ const login=mode==="login";$("authTitle").textContent=login?"Login":"Create Account";$("loginForm").classList.toggle("hidden",!login);$("signupForm").classList.toggle("hidden",login);
+ $("loginTab").classList.toggle("active",login);$("signupTab").classList.toggle("active",!login)
+}
+$("loginOpen").onclick=()=>openAuth("login");$("signupOpen").onclick=()=>openAuth("signup");$("closeModal").onclick=closeAuth;$("loginTab").onclick=()=>setAuthMode("login");$("signupTab").onclick=()=>setAuthMode("signup");
+$("authModal").addEventListener("click",e=>{if(e.target===$("authModal"))closeAuth()});
+$("googleLogin").onclick=()=>{window.location.href="/auth/google"};
 
-historyList.innerHTML =
-"";
+$("signupForm").addEventListener("submit",async e=>{
+ e.preventDefault();try{
+  const r=await fetch("/auth/signup",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({name:$("signupName").value.trim(),email:$("signupEmail").value.trim(),password:$("signupPassword").value})}),d=await r.json();
+  if(!r.ok||!d.success)throw new Error(d.error||"Signup failed.");currentUser=d.user;renderUser();closeAuth();showSuccess("✓ Account created. 1,000 free characters added.");await loadHistory()
+ }catch(err){authMsg(err.message,true)}
+});
+$("loginForm").addEventListener("submit",async e=>{
+ e.preventDefault();try{
+  const r=await fetch("/auth/login",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({email:$("loginEmail").value.trim(),password:$("loginPassword").value})}),d=await r.json();
+  if(!r.ok||!d.success)throw new Error(d.error||"Login failed.");currentUser=d.user;renderUser();closeAuth();showSuccess("✓ Login successful.");await loadHistory()
+ }catch(err){authMsg(err.message,true)}
+});
+$("logoutButton").onclick=async()=>{await fetch("/auth/logout",{method:"POST"});currentUser=null;renderUser();historyList.innerHTML='<div class="empty-history">Login to see your audio history.</div>';showSuccess("Logged out successfully.")};
 
-
-if(
-!items
-||
-items.length === 0
-){
-
-historyList.innerHTML =
-'<div class="empty-history">No generated audio yet.</div>';
-
-return;
-
+document.querySelectorAll(".buy-plan").forEach(btn=>btn.addEventListener("click",()=>buyPlan(btn.dataset.plan)));
+async function buyPlan(planId){
+ if(!requireLogin())return;
+ try{
+  const r=await fetch("/payments/create-order",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({plan_id:planId})}),d=await r.json();
+  if(!r.ok||!d.success)throw new Error(d.error||"Could not start payment.");
+  if(typeof Razorpay==="undefined")throw new Error("Payment checkout could not load.");
+  const options={key:d.key_id,amount:d.amount,currency:d.currency,name:"AI Voice Studio Pro",description:"TTS "+planId+" plan",order_id:d.order_id,
+   handler:async function(resp){
+    const vr=await fetch("/payments/verify",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(resp)}),vd=await vr.json();
+    if(!vr.ok||!vd.success){showError(vd.error||"Payment verification failed.");return}
+    currentUser=vd.user;renderUser();showSuccess("✓ Payment verified. Your plan is active.");await loadAccount()
+   },
+   theme:{color:"#7050ff"}
+  };
+  new Razorpay(options).open()
+ }catch(e){showError(e.message)}
 }
 
-
-items.forEach(
-function(item){
-
-
-const card =
-document.createElement(
-"div"
-);
-
-
-card.className =
-"history-item";
-
-
-const top =
-document.createElement(
-"div"
-);
-
-
-top.className =
-"history-top";
-
-
-const title =
-document.createElement(
-"div"
-);
-
-
-title.className =
-"history-title";
-
-
-title.textContent =
-item.title;
-
-
-const date =
-document.createElement(
-"div"
-);
-
-
-date.className =
-"history-date";
-
-
-date.textContent =
-item.created_at;
-
-
-top.appendChild(
-title
-);
-
-
-top.appendChild(
-date
-);
-
-
-
-const meta =
-document.createElement(
-"div"
-);
-
-
-meta.className =
-"history-meta";
-
-
-meta.textContent =
-item.style
-+
-" • "
-+
-item.voice
-+
-" • "
-+
-item.characters
-+
-" characters";
-
-
-
-const actions =
-document.createElement(
-"div"
-);
-
-
-actions.className =
-"history-actions";
-
-
-
-const play =
-document.createElement(
-"a"
-);
-
-
-play.href =
-item.audio_url;
-
-
-play.target =
-"_blank";
-
-
-play.textContent =
-"▶ Play";
-
-
-
-const download =
-document.createElement(
-"a"
-);
-
-
-download.href =
-item.download_url;
-
-
-download.textContent =
-"⬇ Download";
-
-
-
-actions.appendChild(
-play
-);
-
-
-actions.appendChild(
-download
-);
-
-
-
-card.appendChild(
-top
-);
-
-
-card.appendChild(
-meta
-);
-
-
-card.appendChild(
-actions
-);
-
-
-historyList.appendChild(
-card
-);
-
-
-}
-);
-
-}
-
-
-
-/* =====================================================
-   CLEAR HISTORY
-===================================================== */
-
-clearHistoryButton.addEventListener(
-"click",
-async function(){
-
-
-const confirmed =
-confirm(
-"Clear generated audio history?"
-);
-
-
-if(!confirmed){
-return;
-}
-
-
-try{
-
-
-const response =
-await fetch(
-
-"/history/clear",
-
-{
-method:"POST"
-}
-
-);
-
-
-const data =
-await response.json();
-
-
-if(data.success){
-
-await loadHistory();
-
-}
-
-
-}
-catch(error){
-
-showError(
-"Could not clear history."
-);
-
-}
-
-
-}
-);
-
-
-
-/* =====================================================
-   START
-===================================================== */
-
-updateSliders();
-
-applyStyle();
-
-loadVoiceLibrary();
-
-loadHistory();
-
-
+updateSliders();applyStyle();loadVoiceLibrary();loadMe();
+if(new URLSearchParams(location.search).get("login")==="success"){history.replaceState({},document.title,location.pathname);setTimeout(()=>showSuccess("✓ Google login successful."),500)}
 </script>
-
-
 </body>
-
 </html>
