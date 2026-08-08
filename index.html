@@ -172,7 +172,13 @@ input[type="range"]{width:100%;accent-color:#935eff}.style-description{margin-to
     <div id="previewResult" class="result">
       <h3>▶ Free Voice Preview</h3>
       <p>Short demo only. No characters deducted.</p>
-      <audio id="previewPlayer" controls></audio>
+      <audio
+    id="previewPlayer"
+    controls
+    controlsList="nodownload noplaybackrate"
+    disablePictureInPicture
+    oncontextmenu="return false;">
+</audio>
     </div>
 
     <div id="result" class="result">
