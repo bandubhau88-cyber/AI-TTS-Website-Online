@@ -2,20 +2,24 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Instagram Reel Downloader - Download Reels in HD Free</title>
+    <title>AI Voice Generator - Free AI Text To Speech Online</title>
 
     <meta name="description"
-        content="Download Instagram Reels, Videos, Photos and IGTV online for free. Fast, secure and mobile friendly Instagram Reel Downloader.">
+        content="Convert text into realistic AI voices. Free AI Text To Speech Generator with 1000+ natural voices in 140+ languages.">
 
     <meta name="keywords"
-        content="Instagram Reel Downloader, Instagram Video Downloader, Download Instagram Reels">
+        content="AI Voice Generator, Text To Speech, AI TTS, Voice Generator, AI Audio">
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta name="robots" content="index,follow">
+
+    <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
@@ -25,203 +29,569 @@
 
 <body>
 
-    <!-- HEADER -->
+<header>
 
-    <header>
+    <div class="container nav">
 
-        <div class="container nav">
+        <div class="logo">
+            AI Voice Generator
+        </div>
 
-            <h2 class="logo">
-                Instagram Reel Downloader
-            </h2>
+        <nav>
 
-            <nav>
-                <a href="#features">Features</a>
-                <a href="#faq">FAQ</a>
-                <a href="#footer">Contact</a>
-            </nav>
+            <a href="#features">Features</a>
+
+            <a href="#pricing">Pricing</a>
+
+            <a href="#faq">FAQ</a>
+
+            <a href="contact.html">Contact</a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+<section class="hero">
+
+<div class="container">
+
+<div class="hero-content">
+
+<h1>
+
+Generate Realistic
+
+<span>AI Voices</span>
+
+in Seconds
+
+</h1>
+
+<p>
+
+Convert your text into natural sounding AI speech.
+
+Supports 140+ Languages and 1000+ Voices.
+
+</p>
+
+</div>
+
+<div class="tts-box">
+
+<h2>
+
+AI Text To Speech
+
+</h2>
+
+<textarea
+
+id="text"
+
+placeholder="Type or paste your text here..."></textarea>
+
+<div class="counter">
+
+<span id="charCount">
+
+0 Characters
+
+</span>
+
+</div>
+
+<div class="options">
+
+<div class="field">
+
+<label>
+
+Language
+
+</label>
+
+<select id="language">
+
+<option>English (US)</option>
+
+<option>English (UK)</option>
+
+<option>Hindi</option>
+
+<option>Marathi</option>
+
+<option>Gujarati</option>
+
+<option>French</option>
+
+<option>German</option>
+
+<option>Spanish</option>
+
+<option>Japanese</option>
+
+</select>
+
+</div>
+
+<div class="field">
+
+<label>
+
+Voice
+
+</label>
+
+<select id="voice">
+
+<option>Male Voice</option>
+
+<option>Female Voice</option>
+
+<option>Neural Voice</option>
+
+</select>
+
+</div>
+
+</div>
+
+<div class="options">
+
+<div class="field">
+
+<label>
+
+Speed
+
+</label>
+
+<input
+
+type="range"
+
+id="speed"
+
+min="0.5"
+
+max="2"
+
+step="0.1"
+
+value="1">
+
+</div>
+
+<div class="field">
+
+<label>
+
+Pitch
+
+</label>
+
+<input
+
+type="range"
+
+id="pitch"
+
+min="0"
+
+max="2"
+
+step="0.1"
+
+value="1">
+
+</div>
+
+</div>
+
+<div class="buttons">
+
+<button id="generateBtn">
+
+Generate Voice
+
+</button>
+
+<button id="downloadBtn">
+
+Download MP3
+
+</button>
+
+</div>
+
+<div id="status"></div>
+
+</div>
+
+</div>
+
+</section>
+<!-- ================= FEATURES ================= -->
+
+<section id="features" class="features">
+
+    <div class="container">
+
+        <h2>Why Choose Our AI Voice Generator?</h2>
+
+        <p class="section-text">
+            Powerful AI Text To Speech platform designed for creators,
+            YouTubers, students, businesses and developers.
+        </p>
+
+        <div class="feature-grid">
+
+            <div class="feature-card">
+                <div class="icon">🎙️</div>
+                <h3>1000+ AI Voices</h3>
+                <p>
+                    Generate natural sounding AI voices with premium quality.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="icon">🌍</div>
+                <h3>140+ Languages</h3>
+                <p>
+                    Convert text into multiple languages instantly.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="icon">⚡</div>
+                <h3>Fast Processing</h3>
+                <p>
+                    Generate speech within seconds using AI.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="icon">🎧</div>
+                <h3>Studio Quality</h3>
+                <p>
+                    Crystal clear voice output for professional projects.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="icon">📥</div>
+                <h3>Download MP3</h3>
+                <p>
+                    Download generated voice instantly in MP3 format.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="icon">🔒</div>
+                <h3>Secure & Private</h3>
+                <p>
+                    Your text is protected with complete privacy.
+                </p>
+            </div>
 
         </div>
 
-    </header>
+    </div>
 
-    <!-- HERO -->
+</section>
 
-    <section class="hero">
+<!-- ================= STATS ================= -->
 
-        <div class="container">
+<section class="stats">
 
-            <h1>
-                Download Instagram Reels
-                <br>
-                <span>Fast & Free</span>
-            </h1>
+    <div class="container">
 
-            <p>
-                Paste any public Instagram Reel URL and download it instantly.
-                No Login Required.
-            </p>
+        <div class="stats-grid">
 
-            <form id="downloadForm">
+            <div class="stat-card">
+                <h2>1M+</h2>
+                <p>Users Worldwide</p>
+            </div>
 
-                <div class="download-box">
+            <div class="stat-card">
+                <h2>1000+</h2>
+                <p>AI Voices</p>
+            </div>
 
-                    <input
-                        type="text"
-                        id="url"
-                        placeholder="Paste Instagram Reel URL here..."
-                        required>
+            <div class="stat-card">
+                <h2>140+</h2>
+                <p>Languages</p>
+            </div>
 
-                    <button
-                        type="submit"
-                        id="downloadBtn">
-                        Download Reel
-                    </button>
-
-                </div>
-
-                <div id="message"></div>
-
-            </form>
+            <div class="stat-card">
+                <h2>99.9%</h2>
+                <p>Uptime</p>
+            </div>
 
         </div>
 
-    </section>
+    </div>
 
-    <!-- FEATURES -->
+</section>
 
-    <section id="features" class="features">
+<!-- ================= HOW IT WORKS ================= -->
 
-        <div class="container">
+<section class="how-it-works">
 
-            <h2>Why Use Our Instagram Reel Downloader?</h2>
+    <div class="container">
 
-            <div class="feature-grid">
+        <h2>How It Works</h2>
 
-                <div class="feature-card">
-                    <h3>⚡ Fast Download</h3>
-                    <p>Download Instagram Reels in seconds.</p>
-                </div>
+        <div class="steps">
 
-                <div class="feature-card">
-                    <h3>📱 Mobile Friendly</h3>
-                    <p>Works on Android, iPhone, Tablet and Desktop.</p>
-                </div>
+            <div class="step">
 
-                <div class="feature-card">
-                    <h3>🔒 Safe & Secure</h3>
-                    <p>No Login Required. 100% Secure.</p>
-                </div>
+                <span>1</span>
 
-                <div class="feature-card">
-                    <h3>🎬 HD Quality</h3>
-                    <p>Download the highest quality available.</p>
-                </div>
+                <h3>Enter Text</h3>
 
-                <div class="feature-card">
-                    <h3>🚀 Unlimited Downloads</h3>
-                    <p>Download unlimited public Reels.</p>
-                </div>
+                <p>
+                    Type or paste the text you want to convert into speech.
+                </p>
 
-                <div class="feature-card">
-                    <h3>💯 Free Forever</h3>
-                    <p>No hidden charges.</p>
-                </div>
+            </div>
+
+            <div class="step">
+
+                <span>2</span>
+
+                <h3>Select Voice</h3>
+
+                <p>
+                    Choose your preferred language and AI voice.
+                </p>
+
+            </div>
+
+            <div class="step">
+
+                <span>3</span>
+
+                <h3>Generate Audio</h3>
+
+                <p>
+                    Click Generate and download your MP3 instantly.
+                </p>
 
             </div>
 
         </div>
 
-    </section>
+    </div>
 
-    <!-- HOW -->
+</section>
 
-    <section class="how-it-works">
+<!-- ================= SUPPORTED LANGUAGES ================= -->
 
-        <div class="container">
+<section class="languages">
 
-            <h2>How It Works</h2>
+    <div class="container">
 
-            <div class="steps">
+        <h2>Supported Languages</h2>
 
-                <div class="step">
-                    <h3>1️⃣ Copy Link</h3>
-                    <p>Copy Instagram Reel Link.</p>
-                </div>
+        <div class="language-list">
 
-                <div class="step">
-                    <h3>2️⃣ Paste URL</h3>
-                    <p>Paste it into the box.</p>
-                </div>
+            <span>English</span>
+            <span>Hindi</span>
+            <span>Gujarati</span>
+            <span>Marathi</span>
+            <span>French</span>
+            <span>German</span>
+            <span>Spanish</span>
+            <span>Italian</span>
+            <span>Japanese</span>
+            <span>Korean</span>
+            <span>Chinese</span>
+            <span>Arabic</span>
+            <span>Russian</span>
+            <span>Portuguese</span>
 
-                <div class="step">
-                    <h3>3️⃣ Download</h3>
-                    <p>Click Download.</p>
-                </div>
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= PRICING ================= -->
+
+<section id="pricing" class="pricing">
+
+    <div class="container">
+
+        <h2>Choose Your Plan</h2>
+
+        <div class="pricing-grid">
+
+            <div class="price-card">
+
+                <h3>Free</h3>
+
+                <h1>$0</h1>
+
+                <ul>
+                    <li>✔ 5,000 Characters / Day</li>
+                    <li>✔ Standard Voices</li>
+                    <li>✔ MP3 Download</li>
+                </ul>
+
+                <button>Get Started</button>
+
+            </div>
+
+            <div class="price-card featured">
+
+                <span class="badge">Most Popular</span>
+
+                <h3>Pro</h3>
+
+                <h1>$9.99</h1>
+
+                <ul>
+                    <li>✔ Unlimited Characters</li>
+                    <li>✔ Premium AI Voices</li>
+                    <li>✔ Faster Generation</li>
+                    <li>✔ Commercial License</li>
+                </ul>
+
+                <button>Upgrade</button>
+
+            </div>
+
+            <div class="price-card">
+
+                <h3>Business</h3>
+
+                <h1>$29.99</h1>
+
+                <ul>
+                    <li>✔ Team Access</li>
+                    <li>✔ API Access</li>
+                    <li>✔ Priority Support</li>
+                    <li>✔ Unlimited Downloads</li>
+                </ul>
+
+                <button>Contact Sales</button>
 
             </div>
 
         </div>
 
-    </section>
+    </div>
 
-    <!-- FAQ -->
+</section>
 
-    <section id="faq" class="faq">
+<!-- ================= FAQ ================= -->
 
-        <div class="container">
+<section id="faq" class="faq">
 
-            <h2>Frequently Asked Questions</h2>
+    <div class="container">
 
-            <div class="faq-item">
-                <h3>Is it Free?</h3>
-                <p>Yes, completely free.</p>
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+            <h3>Is AI Voice Generator free?</h3>
+            <p>Yes, you can generate AI voices for free with daily limits.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Can I download MP3?</h3>
+            <p>Yes, generated voices can be downloaded in MP3 format.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>How many languages are supported?</h3>
+            <p>More than 140 languages and accents are supported.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Can I use voices for YouTube?</h3>
+            <p>Yes, Pro plan includes commercial usage rights.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= CTA ================= -->
+
+<section class="cta">
+
+    <div class="container">
+
+        <h2>Start Generating AI Voices Today</h2>
+
+        <p>Create realistic AI voiceovers in seconds.</p>
+
+        <button id="startNowBtn">
+            Get Started Free
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div>
+
+                <h3>AI Voice Generator</h3>
+
+                <p>
+                    Professional AI Text To Speech platform for creators,
+                    businesses and developers.
+                </p>
+
             </div>
 
-            <div class="faq-item">
-                <h3>Need Login?</h3>
-                <p>No Login Required.</p>
+            <div>
+
+                <h4>Quick Links</h4>
+
+                <a href="about.html">About</a><br>
+                <a href="pricing.html">Pricing</a><br>
+                <a href="faq.html">FAQ</a><br>
+                <a href="contact.html">Contact</a>
+
             </div>
 
-            <div class="faq-item">
-                <h3>HD Download?</h3>
-                <p>Yes.</p>
-            </div>
+            <div>
 
-            <div class="faq-item">
-                <h3>Works on Mobile?</h3>
-                <p>Yes.</p>
+                <h4>Legal</h4>
+
+                <a href="privacy.html">Privacy Policy</a><br>
+                <a href="terms.html">Terms of Service</a><br>
+                <a href="refund.html">Refund Policy</a>
+
             </div>
 
         </div>
 
-    </section>
+        <hr>
 
-    <!-- FOOTER -->
+        <p style="text-align:center;margin-top:25px;">
 
-    <footer id="footer">
+            © 2026 AI Voice Generator. All Rights Reserved.
 
-        <div class="container">
+        </p>
 
-            <div class="footer-links">
+    </div>
 
-                <a href="#">About</a>
-                <a href="#">Privacy</a>
-                <a href="#">Terms</a>
-                <a href="#">Contact</a>
+</footer>
 
-            </div>
-
-            <p>
-                © 2026 Instagram Reel Downloader
-            </p>
-
-        </div>
-
-    </footer>
-
-    <script src="{{ url_for('static', filename='script.js') }}"></script>
+<script src="script.js"></script>
 
 </body>
-
 </html>
